@@ -498,3 +498,117 @@
     height: 38px;
     background: url("../img/icon/ico-close.png") no-repeat center / cover;
 }
+
+.camera-title h2{
+    font-size: 64px;
+    font-family: "apple-500";
+    color: #1f1e1e;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.camera-title h2 span{
+    font-size: 64px;
+    font-family: "apple-500";
+    color: #506eff;
+    font-weight: 500;
+    margin-right: 20px;
+    text-align: center;
+}
+.camera-title h3{
+    font-size: 40px;
+    font-family: "apple-500";
+    color: #474849;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+}
+.camera-result-container{
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.camera-result-container>img{
+    margin-bottom: 70px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.camera-result-container .slide{
+    position: relative;
+    margin-top: 302px;
+    overflow-x: hidden;
+}
+.camera-result-container .slide ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.camera-result-container .slide ul li{
+    margin-right: 44px;
+    width: 404px;
+    height: 404px;
+    border-radius: 100%;
+    background-color: #e3e4e8;
+    position: relative;
+}
+.camera-result-container .slide ul li:last-child{
+    margin-right: 0;
+}
+.camera-result-container .slide ul li.active{
+    box-shadow: 0px 33px 40px 5px rgba(0, 0, 0, 0.15);
+}
+.camera-result-container-body{
+    background-color: #f6f5f5;
+}
+.camera-result-container .result-img{
+    width: 260px;
+    height: 260px;
+    border-radius: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.camera-result-container .result-text{
+    margin-bottom: 85px;
+}
+.camera-result-container .result-text p{
+    font-size: 40px;
+    font-family: "apple-600";
+    color: #353434;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 60px;
+}
+.camera-result-container .result-text span{
+    display: block;
+    font-size: 70px;
+    font-family: "apple-600";
+    color: #5f64ff;
+    text-align: center;
+    line-height: 60px;
+}
+.camera-result-container .result-pagination{
+    display: flex;
+}
+.result-pagination span{
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: #d0d0d0;
+    margin-right: 8px;
+}
+.result-pagination span:last-child{
+    margin-right: 0;
+}
+.result-pagination span.active{
+    background-color: #5769ff;
+}
