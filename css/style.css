@@ -198,6 +198,9 @@
     font-weight: 500;
     color: #383838;
 }
+.main-header .clock{
+    color: #fff;
+}
 .clock span{
     margin-right: 10px;
 }
@@ -224,7 +227,9 @@
     font-weight: 400;
     color: #2b2b2b;
 }
-
+.main-header .qr p{
+    color: #fff;
+}
 .main-title{
     position: absolute;
     left: 50%;
@@ -382,4 +387,114 @@
 }
 .photo-link span{
     margin-bottom: 7px;
+}
+.camera-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+.camera-container .camera-dummy{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 930px;
+    height: 1180px;
+
+    left: 50%;
+    top: 238px;
+    transform: translateX(-50%);
+}
+.camera-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.camera-dummy-item{
+    position: absolute;
+    width: 68px;
+    height: 68px;
+}
+.left{
+    left: 0;
+}
+.top{
+    top: 0;
+}
+.bottom{
+    bottom: 0;
+}
+.right{
+    right: 0;
+}
+.camera-dummy-item span{
+    background-color: #fff;
+    position: absolute;
+}
+.camera-dummy-item:nth-child(1) span:nth-child(1),
+.camera-dummy-item:nth-child(2) span:nth-child(1){
+    width: 68px;
+    height: 11px;
+    top: 0;
+}
+.camera-dummy-item:nth-child(1) span:nth-child(2),
+.camera-dummy-item:nth-child(2) span:nth-child(2){
+    width: 11px;
+    height: 68px;
+}
+.camera-dummy-item:nth-child(3) span:nth-child(1),
+.camera-dummy-item:nth-child(4) span:nth-child(1){
+    width: 11px;
+    height: 68px;
+}
+.camera-dummy-item:nth-child(3) span:nth-child(2),
+.camera-dummy-item:nth-child(4) span:nth-child(2){
+    width: 68px;
+    height: 11px;
+}
+.camera-dummy-item:nth-child(1) span:nth-child(2){
+    left: 0;
+}
+.camera-dummy-item:nth-child(2) span:nth-child(2){
+    right: 0;
+}
+.camera-dummy-item:nth-child(3){
+    transform: rotate(270deg);
+}
+.camera-dummy-item:nth-child(4){
+    transform: rotate(180deg);
+}
+.camera-title{
+    position: absolute;
+    top: 134px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.camera-title p{
+    font-size: 38px;
+    font-family: "apple";
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
+.back-link{
+    position: absolute;
+    left: 50%;
+    bottom: 225px;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-link i{
+    width: 38px;
+    height: 38px;
+    background: url("../img/icon/ico-close.png") no-repeat center / cover;
 }
