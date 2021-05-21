@@ -198,7 +198,7 @@
     font-weight: 500;
     color: #383838;
 }
-.main-header .clock{
+.main-header.white .clock{
     color: #fff;
 }
 .clock span{
@@ -227,7 +227,7 @@
     font-weight: 400;
     color: #2b2b2b;
 }
-.main-header .qr p{
+.main-header.white .qr p{
     color: #fff;
 }
 .main-title{
