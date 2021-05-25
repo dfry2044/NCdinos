@@ -608,23 +608,6 @@
     border-radius: 50%;
     display: block;
 }
-.camera-result-container .result-pagination{
-    display: flex;
-}
-.result-pagination span{
-    width: 16px;
-    height: 16px;
-    border-radius: 100%;
-    background-color: #d0d0d0;
-    margin-right: 8px;
-}
-.result-pagination span:last-child{
-    margin-right: 0;
-}
-.result-pagination span.active{
-    background-color: #5769ff;
-}
-
 .picture-choice-container{
     background-color: #192440;
     width: 100%;
@@ -645,6 +628,7 @@
 }
 .picture-choice-group>li{
     width: 1080px;
+    transition: 0.5s ease;
 }
 .picture-choice-group ul{
     display: flex;
@@ -668,19 +652,95 @@
 }
 .picture-choice-group ul li img{
     position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    left: 52.5%;
+    transform: translate(-50%,-50%);
 }
-.picture-choice-group li:first-child li:nth-child(1){
-    height: 400px;
+.people{
+    transform: translate(-50%,-50%) scale(0.99) !important;
 }
-.picture-choice-group li:first-child li:nth-child(2){
+.picture-choice-group li li:nth-child(1){
+    height: 430px;
+}
+.picture-choice-group li li:nth-child(2){
     height: 476px;
 }
-.picture-choice-group li:first-child li:nth-child(3){
+.picture-choice-group li li:nth-child(3){
     height: 590px;
 }
-.picture-choice-group li:first-child li:nth-child(4){
+.picture-choice-group li li:nth-child(3) img{
+    margin-left: 50px;
+}
+.picture-choice-group li li:nth-child(4){
     height: 462px;
+}
+.picture-choice-group li li:nth-child(4) img{
+    top: calc(50% - 74px);
+}
+
+.camera-title.white h2{
+    color: #fff;
+}
+.picture-share-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #192440;
+}
+.share-link{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 290px;
+    font-size: 40px;
+    font-family: "apple-500";
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.picture-share-container .picture-wrap{
+    position:relative;
+    width: calc(1080px - 150px);
+    margin: 0 auto;
+    top: 368px;
+}
+.picture-share-container .picture-wrap img{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: calc(50% + 368px);
+    transform: translate(-50%,-50%);
+}
+.picture-choice-btn-group button{
+    width: 90px;
+    height: 158px;
+    background: url("../img/icon/ico-arrowWrap.png") no-repeat center / cover;
+    position: absolute;
+    top: calc(50% - 100px);
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.picture-choice-btn-group button:first-child{
+    transform: translateY(-50%) rotate(180deg);
+    left: 0;
+}
+.picture-choice-btn-group button:last-child{
+    right: 0;
+}
+.picture-choice-btn-group button i{
+    width: 28px;
+    height: 46px;
+    background: url("../img/icon/ico-arrowWhite.png") no-repeat center / cover;
+    display: block;
+    transition: 0.5s ease;
+}
+.picture-choice-btn-group button.op i{
+    opacity: 0.2;
+}
+.picture-choice-group ul li a{
+    width: 100%;
+    height: 100%;
 }

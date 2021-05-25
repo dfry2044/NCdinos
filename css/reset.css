@@ -15,3 +15,51 @@ body{
     height: 1920px;
     margin: 0 auto;
 }
+button{
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.swiper-container{
+    position: static !important;
+}
+
+.swiper-button-prev{
+    width: 90px !important;
+    height: 158px !important;
+    background: url("../img/icon/ico-arrowWrap.png") no-repeat center / cover !important;
+    position: absolute !important;
+    top: calc(50% - 100px) !important;
+    transform: translateY(-50%) rotate(180deg) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.swiper-button-prev::after{
+    content: '' !important;
+    width: 28px !important;
+    height: 46px !important;
+    background: url("../img/icon/ico-arrowWhite.png") no-repeat center / cover !important;
+    display: block !important;
+    transition: 0.5s ease !important;
+}
+.swiper-button-next{
+    width: 90px !important;
+    height: 158px !important;
+    background: url("../img/icon/ico-arrowWrap.png") no-repeat center / cover !important;
+    position: absolute !important;
+    top: calc(50% - 100px) !important;
+    transform: translateY(-50%) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.swiper-button-next::after{
+    content: '' !important;
+    width: 28px !important;
+    height: 46px !important;
+    background: url("../img/icon/ico-arrowWhite.png") no-repeat center / cover !important;
+    display: block !important;
+    transition: 0.5s ease !important;
+}
