@@ -63,3 +63,21 @@ button{
     display: block !important;
     transition: 0.5s ease !important;
 }
+.swiper-pagination{
+    bottom: 410px !important;
+    left: 50%;
+    transform: translateX(-50%) !important;
+}
+.swiper-pagination-bullet{
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 100% !important;
+    margin-right: 8px !important;
+    background-color: #374467 !important;
+}
+.swiper-pagination-bullet:last-child{
+    margin-right: 0px !important;
+}
+.swiper-pagination-bullet-active{
+    background-color: #fff !important;
+}
