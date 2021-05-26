@@ -547,15 +547,19 @@
     margin-bottom: 30px;
 }
 .camera-result-container .slide ul li{
-    margin-right: 44px;
-    width: 404px;
+    width: 404px !important;
     height: 404px;
     border-radius: 100%;
     background-color: #e3e4e8;
     position: relative;
+    transition: 0.5s ease;
+    margin: 0 22px !important;
+}
+.camera-result-container .slide ul li:first-child{
+    margin-right: 22px !important;
 }
 .camera-result-container .slide ul li:last-child{
-    margin-right: 0;
+    margin-left: 22px !important;
 }
 .camera-result-container .slide ul li.active{
     box-shadow: 0px 33px 40px 5px rgba(0, 0, 0, 0.15);
@@ -577,7 +581,8 @@
     justify-content: center;
     align-items: center;
 }
-.camera-result-container .result-img img{
+.camera-result-container .result-img img,
+.camera-result-container .result-img svg{
     width: calc(100% - 2px);
     height: calc(100% - 2px);
     border: 1px solid #fff;

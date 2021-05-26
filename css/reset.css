@@ -30,11 +30,16 @@ button{
     height: 158px !important;
     background: url("../img/icon/ico-arrowWrap.png") no-repeat center / cover !important;
     position: absolute !important;
-    top: calc(50% - 100px) !important;
+    left: 0 !important;
+    top: calc(50% - 50px) !important;
     transform: translateY(-50%) rotate(180deg) !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+}
+.swiper-button-prev.white{
+    background: url("../img/icon/ico-arrowWrap-w.png") no-repeat center / cover !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
 }
 .swiper-button-prev::after{
     content: '' !important;
@@ -44,22 +49,43 @@ button{
     display: block !important;
     transition: 0.5s ease !important;
 }
+.swiper-button-prev.white::after{
+    content: '' !important;
+    width: 28px !important;
+    height: 46px !important;
+    background: url("../img/icon/ico-arrowBlue.png") no-repeat center / cover !important;
+    display: block !important;
+    transition: 0.5s ease !important;
+}
 .swiper-button-next{
     width: 90px !important;
     height: 158px !important;
     background: url("../img/icon/ico-arrowWrap.png") no-repeat center / cover !important;
     position: absolute !important;
-    top: calc(50% - 100px) !important;
+    top: calc(50% - 50px) !important;
+    right: 0 !important;
     transform: translateY(-50%) !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+}
+.swiper-button-next.white{
+    background: url("../img/icon/ico-arrowWrap-w.png") no-repeat center / cover !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
 }
 .swiper-button-next::after{
     content: '' !important;
     width: 28px !important;
     height: 46px !important;
     background: url("../img/icon/ico-arrowWhite.png") no-repeat center / cover !important;
+    display: block !important;
+    transition: 0.5s ease !important;
+}
+.swiper-button-next.white::after{
+    content: '' !important;
+    width: 28px !important;
+    height: 46px !important;
+    background: url("../img/icon/ico-arrowBlue.png") no-repeat center / cover !important;
     display: block !important;
     transition: 0.5s ease !important;
 }
@@ -80,4 +106,13 @@ button{
 }
 .swiper-pagination-bullet-active{
     background-color: #fff !important;
+}
+.camera-result-container-body .swiper-pagination-bullet-active{
+    background-color: #5769ff !important;
+}
+.camera-result-container-body .swiper-slide-active{
+    box-shadow: 0px 33px 40px 5px rgba(0, 0, 0, 0.15);
+}
+.camera-result-container-body .swiper-pagination{
+    bottom:580px !important;
 }

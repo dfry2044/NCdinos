@@ -11,3 +11,8 @@ shareCloseBtn.click(function(){
     sharePopup.removeClass("show");
     sharePopupDim.removeClass("show");
 });
+var btn = $("button");
+
+$("button").click(function(){
+
+})
