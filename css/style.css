@@ -239,7 +239,7 @@
     white-space: nowrap;
 }
 .main-title h1{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .main-title h2{
     font-size: 107px;
@@ -255,12 +255,18 @@
     font-family: "apple-500";
     color: #131313;
     line-height: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .main-title p{
-    font-size: 32px;
+    font-size: 30px;
     font-family: "apple-400";
     color: #606162;
+    display: flex;
+    align-items: center;
+}
+.main-title p img{
+    width: 135px;
+    margin: 0 10px;
 }
 .event-popup{
     position: absolute;
