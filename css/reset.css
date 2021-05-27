@@ -116,3 +116,6 @@ button{
 .camera-result-container-body .swiper-pagination{
     bottom:580px !important;
 }
+.camera-result-container-body .camera-result-pagination{
+    bottom: 410px !important;
+}
