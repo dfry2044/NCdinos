@@ -31,7 +31,7 @@ button{
     background: url("../img/icon/ico-arrowWrap.png") no-repeat center / cover !important;
     position: absolute !important;
     left: 0 !important;
-    top: calc(50% - 50px) !important;
+    top: calc(50% - -25px) !important;
     transform: translateY(-50%) rotate(180deg) !important;
     display: flex !important;
     justify-content: center !important;
@@ -62,7 +62,7 @@ button{
     height: 158px !important;
     background: url("../img/icon/ico-arrowWrap.png") no-repeat center / cover !important;
     position: absolute !important;
-    top: calc(50% - 50px) !important;
+    top: calc(50% - -25px) !important;
     right: 0 !important;
     transform: translateY(-50%) !important;
     display: flex !important;
@@ -114,8 +114,8 @@ button{
     box-shadow: 0px 33px 40px 5px rgba(0, 0, 0, 0.15);
 }
 .camera-result-container-body .swiper-pagination{
-    bottom:580px !important;
+    bottom:500px !important;
 }
 .camera-result-container-body .camera-result-pagination{
-    bottom: 410px !important;
+    bottom: 450px !important;
 }

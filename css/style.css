@@ -129,6 +129,16 @@
         margin-top: 0;
     }
 }
+@keyframes fadeOut-down{
+    0%{
+        opacity: 1;
+        margin-top: 0;
+    }
+    100%{
+        opacity: 0;
+        margin-top: 15px;
+    }
+}
 .main-header{
     position: absolute;
     top: 0;
@@ -248,7 +258,7 @@
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
 }
 .qr p{
     font-size: 28px;
@@ -319,11 +329,16 @@
 .main-title h1 img.text2{
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 55%;
     transform: translate(-50%,-50%);
     opacity: 0;
-    margin-top: 15px;
-    animation: fadeIn-up 0.5s 4.8s ease-in-out forwards;
+}
+.main-title h1 img.dino{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
 }
 .main-title h2{
     font-size: 107px;
@@ -333,13 +348,19 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 0.5s 5s ease forwards;
+    letter-spacing: -3px;
+    margin-top: 30px;
 }
 .main-title h3{
     font-size: 56px;
     font-family: "apple-500";
-    color: #131313;
+    color: #444445;
     line-height: 60px;
     margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeIn 0.5s 5.15s ease forwards;
 }
 .main-title p{
     font-size: 30px;
@@ -347,6 +368,8 @@
     color: #606162;
     display: flex;
     align-items: center;
+    opacity: 0;
+    animation: fadeIn 0.5s 5.3s ease forwards;
 }
 .main-title p img{
     width: 135px;
@@ -561,7 +584,7 @@
 }
 .camera-title{
     position: absolute;
-    top: 134px;
+    top: 66px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -576,7 +599,7 @@
 .back-link{
     position: absolute;
     left: 50%;
-    bottom: 225px;
+    bottom: 290px;
     transform: translateX(-50%);
     width: 130px;
     height: 130px;
@@ -601,7 +624,7 @@
     font-family: "apple-500";
     color: #1f1e1e;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     text-align: center;
 }
 .camera-title h2 span{
@@ -621,19 +644,21 @@
 }
 .camera-result-container{
     position: absolute;
-    top: 380px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
+    height: 100%;
 }
 .camera-result-container>img{
     margin-bottom: 70px;
     position: absolute;
+    top: 520px;
     left: 50%;
     transform: translateX(-50%);
 }
 .camera-result-container .slide{
     position: relative;
-    margin-top: 302px;
+    margin-top: 760px;
     overflow-x: hidden;
 }
 .camera-result-container .slide ul{
@@ -730,6 +755,7 @@
 .picture-choice-group>li{
     width: 1080px;
     transition: 0.5s ease;
+    margin-top: 35px;
 }
 .picture-choice-group ul{
     display: flex;
