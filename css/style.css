@@ -100,6 +100,35 @@
         transform: scale(1);
     }
 }
+@keyframes logo-scale1{
+    0%{
+        transform: translate(-50%,-50%) scale(0);
+    }
+    50%{
+        transform: translate(-50%,-50%) scale(1.15);
+    }
+    100%{
+        transform: translate(-50%,-50%) scale(1);
+    }
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeIn-up{
+    0%{
+        opacity: 0;
+        margin-top: 15px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
 .main-header{
     position: absolute;
     top: 0;
@@ -240,6 +269,61 @@
 }
 .main-title h1{
     margin-bottom: 30px;
+    width: 240px;
+    height: 163px;
+    position: relative;
+    margin: 0 auto;
+}
+.main-title h1 .circle1{
+    width: 163px;
+    height: 163px;
+    border-radius: 50%;
+    background-color: #5c8ebb;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    z-index: 0;
+    animation: logo-scale1 0.7s 4s ease-in-out forwards;
+}
+.main-title h1 .circle2{
+    width: 153px;
+    height: 153px;
+    border-radius: 50%;
+    background-color: #071d3d;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    z-index: 0;
+    animation: logo-scale1 0.7s 4.15s ease-in-out forwards;
+}
+.main-title h1 img.ball{
+    width: 114px;
+    height: 114px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    z-index: 0;
+    animation: logo-scale1 0.7s 4.3s ease-in-out forwards;
+}
+.main-title h1 img.text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    animation: fadeIn 0.7s 4.5s ease-in-out forwards;
+}
+.main-title h1 img.text2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    margin-top: 15px;
+    animation: fadeIn-up 0.5s 4.8s ease-in-out forwards;
 }
 .main-title h2{
     font-size: 107px;
@@ -350,23 +434,26 @@
     margin-right: 30px;
 }
 .main-slide-wrap ul li:nth-child(1){
-    margin-top: 0;
+    margin-top: 160px;
 }
 .main-slide-wrap ul li:nth-child(2){
-    margin-top: 250px;
-    margin-left: -44px;
+    margin-top: 0;
 }
 .main-slide-wrap ul li:nth-child(3){
-    margin-top: 5px;
-    margin-left: -70px;
+    margin-top: 255px;
+    margin-left: -34px;
 }
 .main-slide-wrap ul li:nth-child(4){
-    margin-top: 250px;
-    margin-left: -40px;
+    margin-top: 0;
+    margin-left: -44px;
 }
 .main-slide-wrap ul li:nth-child(5){
+    margin-top: 270px;
+    margin-left: 16px;
+}
+.main-slide-wrap ul li:nth-child(6){
     margin-top: 0;
-    margin-left: -30px;
+    margin-left: -100px;
 }
 .photo-link{
     position: absolute;
@@ -505,6 +592,10 @@
     background: url("../img/icon/ico-close.png") no-repeat center / cover;
 }
 
+.camera-title img{
+    margin: 0 auto 30px;
+    display: block;
+}
 .camera-title h2{
     font-size: 64px;
     font-family: "apple-500";
@@ -518,14 +609,13 @@
     font-family: "apple-500";
     color: #506eff;
     font-weight: 500;
-    margin-right: 20px;
     text-align: center;
 }
 .camera-title h3{
     font-size: 40px;
-    font-family: "apple-500";
+    font-family: "apple-300";
     color: #474849;
-    font-weight: 500;
+    font-weight: 300;
     text-align: center;
     white-space: nowrap;
 }
