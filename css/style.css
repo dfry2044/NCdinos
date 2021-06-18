@@ -155,7 +155,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     width: 1080px;
-    height: 1920px;
+    height: 100vh;
 }
 .circle-wrapper{
     width: 100%;
@@ -226,7 +226,7 @@
 .wrap{
     position: relative;
     width: 1080px;
-    height: 1920px;
+    height: 100vh;
     margin: 0 auto;
 }
 
@@ -508,7 +508,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 1080px;
     height: 100vh;
     z-index: -1;
 }
@@ -599,7 +599,8 @@
 .back-link{
     position: absolute;
     left: 50%;
-    bottom: 290px;
+    bottom: 240px;
+    z-index: 999;
     transform: translateX(-50%);
     width: 130px;
     height: 130px;
@@ -898,9 +899,10 @@
 .share-popup-dim{
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 1080px;
-    height: 1920px;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
     opacity: 0;
     visibility: hidden;
